@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+    <definition name="indexTemplate" template="/WEB-INF/tilestemplate/jsp/indexTemplate.jsp">
+        <put-attribute name="body" value="" />
+    </definition> 
+    
+    <definition name="homeTemplate" template="/WEB-INF/tilestemplate/jsp/homeTemplate.jsp">
+    	<put-attribute name="header" value="/WEB-INF/view/jsp/header.jsp" />
+    	<put-attribute name="leftmenu" value="/WEB-INF/view/jsp/leftmenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/view/jsp/footer.jsp" />
+    </definition> 
+    
+    
+	    <definition name="adminDashboard" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Dashboard" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/adminDashboard.jsp" />
+	        <put-attribute name="currentpage" value="adminDashboard" cascade="true"/>
+	    </definition>
+	    
+	   
+	   <definition name="adminLogNewSuggestion" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  New Suggestion" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/logNewSuggestion.jsp" />
+	        <put-attribute name="currentpage" value="newSuggestion" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminTrackLogSuggestion" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Track Suggestion" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/trackLoggedSuggestion.jsp" />
+	        <put-attribute name="currentpage" value="loggedSuggestion" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminSolvedSuggestion" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Solved Suggestion" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/solvedSuggestion.jsp" />
+	        <put-attribute name="currentpage" value="acceptedSuggestion" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminPendingSuggestion" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Pending Suggestion" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/pendingSuggestion.jsp" />
+	        <put-attribute name="currentpage" value="pendingSuggestion" cascade="true"/>
+	    </definition>
+    
+    	<definition name="adminTrackLogComplain" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Track Complain" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/trackLoggedComplain.jsp" />
+	        <put-attribute name="currentpage" value="loggedComplain" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminSolvedComplain" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Solved Complain" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/solvedComplain.jsp" />
+	        <put-attribute name="currentpage" value="solvedComplain" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminPendingComplain" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Pending Complain" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/pendingComplain.jsp" />
+	        <put-attribute name="currentpage" value="pendingComplain" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminViewComplain" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  View Complain" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/viewComplain.jsp" />
+	        <put-attribute name="currentpage" value="viewComplain" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminSetPriority" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Set Priority" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/setPriority.jsp" />
+	        <put-attribute name="currentpage" value="setPriority" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminWorkAssignment" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Assignment" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/workAssignment.jsp" />
+	        <put-attribute name="currentpage" value="workAssignment" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminMemberDashboard" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Member" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/memberDashboard.jsp" />
+	        <put-attribute name="currentpage" value="memberDashboard" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminManageProcess" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Process" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/manageProcess.jsp" />
+	        <put-attribute name="currentpage" value="manageProcess" cascade="true"/>
+	    </definition>
+    
+    	<definition name="adminNewUser" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Process" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/adminNewUser.jsp" />
+	        <put-attribute name="currentpage" value="adminNewUser" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="adminUserProfile" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  User Profile" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/userProfile.jsp" />
+	        <put-attribute name="currentpage" value="adminUserProfile" cascade="true"/>
+	    </definition>
+    
+        <definition name="adminUsersDashboard" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  User Profile" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/project_admin/adminUsersDashboard.jsp" />
+	        <put-attribute name="currentpage" value="adminUsersDashboard" cascade="true"/>
+	    </definition>
+</tiles-definitions>

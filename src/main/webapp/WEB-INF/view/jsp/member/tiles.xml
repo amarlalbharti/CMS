@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+    <definition name="indexTemplate" template="/WEB-INF/tilestemplate/jsp/indexTemplate.jsp">
+        <put-attribute name="body" value="" />
+    </definition> 
+    
+    <definition name="homeTemplate" template="/WEB-INF/tilestemplate/jsp/homeTemplate.jsp">
+    	<put-attribute name="header" value="/WEB-INF/view/jsp/header.jsp" />
+    	<put-attribute name="leftmenu" value="/WEB-INF/view/jsp/leftmenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/view/jsp/footer.jsp" />
+    </definition> 
+    
+    
+	    <definition name="userDashboard" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Dashboard" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/member/memberDashboard.jsp" />
+	        <put-attribute name="currentpage" value="userDashboard" cascade="true"/>
+	    </definition>
+	    
+	   <definition name="userProfile" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  User Profile" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/userProfile.jsp" />
+	        <put-attribute name="currentpage" value="userProfile" cascade="true"/>
+	    </definition>
+	  
+    
+</tiles-definitions>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+    
+<hibernate-configuration>
+    
+    <session-factory>
+    
+     	
+  		<mapping class="com.cms.domain.LoginInfo"/>
+		<mapping class="com.cms.domain.Registration"/>
+		<mapping class="com.cms.domain.UserRole"/>
+		<mapping class="com.cms.domain.Persistent_Logins"/>
+		<mapping class="com.cms.domain.Department"/>
+		<mapping class="com.cms.domain.AppAdmin"/>
+		<mapping class="com.cms.domain.Application"/>
+		<mapping class="com.cms.domain.Module"/>
+		<mapping class="com.cms.domain.AtLevel"/>
+		<mapping class="com.cms.domain.ComplainType"/>
+		<mapping class="com.cms.domain.Priority"/>
+		<mapping class="com.cms.domain.Status"/>
+		<mapping class="com.cms.domain.TeamMember"/>
+		<mapping class="com.cms.domain.Link"/>
+		<mapping class="com.cms.domain.ComplainDetail"/>
+		<mapping class="com.cms.domain.ProjectAdmin"/>
+		<mapping class="com.cms.domain.Attachments"/>
+		
+		
+    </session-factory>
+    
+</hibernate-configuration>

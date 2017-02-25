@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+    <definition name="indexTemplate" template="/WEB-INF/tilestemplate/jsp/indexTemplate.jsp">
+        <put-attribute name="body" value="" />
+    </definition> 
+    
+    <definition name="homeTemplate" template="/WEB-INF/tilestemplate/jsp/homeTemplate.jsp">
+    	<put-attribute name="header" value="/WEB-INF/view/jsp/header.jsp" />
+    	<put-attribute name="leftmenu" value="/WEB-INF/view/jsp/leftmenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/view/jsp/footer.jsp" />
+    </definition> 
+    
+    
+	    <definition name="appDashboard" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Dashboard" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/appDashboard.jsp" />
+	        <put-attribute name="currentpage" value="appDashboard" cascade="true"/>
+	    </definition>
+	    
+	     <definition name="appDepartment" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Department" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addDepartment.jsp" />
+	        <put-attribute name="currentpage" value="appDepartment" cascade="true"/>
+	    </definition>
+	    
+	     <definition name="appApplication" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Application" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addApplication.jsp" />
+	        <put-attribute name="currentpage" value="appApplication" cascade="true"/>
+	    </definition>
+	    
+	     <definition name="appModule" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Application" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addModule.jsp" />
+	        <put-attribute name="currentpage" value="appModule" cascade="true"/>
+	    </definition>
+	    
+	     <definition name="appProcess" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Process" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addProcess.jsp" />
+	        <put-attribute name="currentpage" value="appProcess" cascade="true"/>
+	    </definition>
+	    
+	     <definition name="appProjectAdmin" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  ProjectAdmin" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addProjectAdmin.jsp" />
+	        <put-attribute name="currentpage" value="appProjectAdmin" cascade="true"/>
+	    </definition>
+	    
+	     <definition name="appProjectMember" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  Member" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addMember.jsp" />
+	        <put-attribute name="currentpage" value="appProjectMember" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="appNewUser" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  New User" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addNewUser.jsp" />
+	        <put-attribute name="currentpage" value="appNewUser" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="appUserProfile" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  User Profile" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/userProfile.jsp" />
+	        <put-attribute name="currentpage" value="appUserProfile" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="appUsersDashboard" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  User Dashboard" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/addUserDashboard.jsp" />
+	        <put-attribute name="currentpage" value="appUsersDashboard" cascade="true"/>
+	    </definition>
+	    
+	     <definition name="appViewUser" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  User" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/viewUser.jsp" />
+	        <put-attribute name="currentpage" value="appViewUser" cascade="true"/>
+	    </definition>
+	    
+	    <definition name="appAddDept" extends="homeTemplate">
+	        <put-attribute name="title" value="CMS -  User" />
+	        <put-attribute name="body" value="/WEB-INF/view/jsp/app_admin/appAddDept.jsp" />
+	        <put-attribute name="currentpage" value="appAddDept" cascade="true"/>
+	    </definition>
+</tiles-definitions>
